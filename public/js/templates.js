@@ -4,11 +4,12 @@ define([
   'use strict';
   var Templates = {};
   
-  Templates.forecast = [
-    '<h3><%= dt %></h3>',
-    '<span class="temperature"><%= main.temp %></span>&deg;F <br>',
-    '<%= weather[0].main %> <br>',
-    '<%= weather[0].description %>',
+  Templates.hourlyForecast = [
+    '<h1><%= dt %></h1>',
+    '<span class="temperature"><%= main.temp %></span>',
+    '<span class="degrees">&deg;F</span>',
+    '<span class="icon" data-icon="<%= weather[0].icon %>"></span> <br>',
+    '<%= weather[0].main %> - <%= weather[0].description %> <br>',
     '<ul class="other-info">',
       '<li>Temp Max: <%= main.temp_max %>&deg;</li>',
       '<li>Temp Min: <%= main.temp_min %>&deg;</li>',
@@ -17,7 +18,7 @@ define([
     '</ul>'
   ];
   
-  Templates.forecastList = [
+  Templates.hourlyForecastList = [
     '<div>',
       '<a href="#" class="button prev">Prev</a>',
       '<a href="#" class="button next">Next</a>',

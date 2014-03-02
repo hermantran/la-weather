@@ -1,16 +1,20 @@
 define([
   'jquery',
-  'collections/forecasts',
-  'views/forecasts'
-], function($, ForecastsCollection, ForecastsView) {
+  'collections/hourlyForecasts',
+  'views/hourlyForecasts'
+], function($, HourlyForecastCollection, HourlyForecastListView) {
   var App = {
     initialize: function() {
       var $container = $('.controls'),
-          forecastsCollection = new ForecastsCollection({ url: 'data/hourly.json' }),
-          forecastsView = new ForecastsView({ el: $container, collection: forecastsCollection });
+          hourlyForecastCollection = new HourlyForecastCollection({ url: 'data/hourly.json' }),
+          hourlyForecastListView = new HourlyForecastListView({ el: $container, collection: hourlyForecastCollection });
       
-      forecastsCollection.fetch();
-      $container.append(forecastsView.el);
+      hourlyForecastCollection.fetch({ 
+        success: function() { 
+          hourlyForecastListView.changeActive();  
+        }
+      });
+      $container.append(hourlyForecastListView.el);
     }
   };
   
