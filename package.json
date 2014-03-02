@@ -1,0 +1,13 @@
+{
+  "name": "weather-app",
+  "version": "0.0.1",
+  "private": "true",
+  "author": "Herman Tran <hermanctran@gmail.com>",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-sass": "~0.7.2",
+    "grunt-contrib-requirejs": "~0.4.3"
+  }
+}
