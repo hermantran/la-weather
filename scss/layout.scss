@@ -1,6 +1,6 @@
 .sky {
   width: 100%;
-  height: 70%;
+  height: 100%;
   position: relative;
   @include transition(background 2s linear);
   
@@ -9,8 +9,6 @@
   }
 }
 
-.controls {
-  width: 50%;
-  height: 100px;
-  margin: 0 auto;
+.info {
+  padding: 10px;
 }

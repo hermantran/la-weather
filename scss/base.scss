@@ -12,17 +12,30 @@ body, html {
 
 h1, h2, h3, h4, h5 {
   margin: 0;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 ul {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 a {
+  color: lighten(blue, 10%);
   text-decoration: none;
   &:hover {
-    text-decoration: underline;  
+    // text-decoration: underline;  
   }
+  &:active {
+    color: darken(blue, 50%);  
+  }
+}
+
+footer {
+  text-align: right;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 12px;
 }

@@ -1,11 +1,12 @@
 define([
   'backbone',
-  'templates'
-], function(Backbone, Templates) {
+  'templates',
+  'moment'
+], function(Backbone, Templates, moment) {
   'use strict';
   var ForecastView = Backbone.View.extend({
     tagName: 'li',
-    className: 'hide',
+    className: 'hide forecast',
     template: Templates.forecast,
     
     initialize: function() {
@@ -23,6 +24,7 @@ define([
     },
 
     render: function() {
+      this.model.set('dt', moment(this.model.get('dt_txt')).calendar().replace('at', '<br>at'));
       this.$el.html(this.template(this.model.toJSON()));
       return this;
     }

@@ -1,5 +1,9 @@
+$morning: #CAEEFE;
+$night: #0B0B15;
+
 @import 'mixins';
 @import 'base';
 @import 'layout';
-@import 'theme';
+@import 'module';
 @import 'state';
+@import 'theme';

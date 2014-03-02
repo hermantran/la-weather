@@ -1,6 +1,20 @@
-@mixin transition($property) {
-  -webkit-transition:$property;
-     -moz-transition:$property;
-       -o-transition:$property;
-          transition:$property;
+@mixin transition($value) {
+  -webkit-transition:$value;
+     -moz-transition:$value;
+       -o-transition:$value;
+          transition:$value;
+}
+
+@mixin transform($value) {
+  -webkit-transform:$value;
+     -moz-transform:$value;
+       -o-transform:$value;
+          transform:$value;
+}
+
+@mixin prefix($property, $value) {
+  -webkit-#{$property}:$value;
+     -moz-#{$property}:$value;
+       -o-#{$property}:$value;
+          #{$property}:$value;
 }
