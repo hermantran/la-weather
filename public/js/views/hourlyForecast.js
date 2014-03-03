@@ -26,7 +26,7 @@ define([
     },
 
     render: function() {
-      this.model.set('dt', moment(this.model.get('dt_txt')).format('h:mm A'));
+      this.model.set('dt', moment(this.model.get('dt_txt')).calendar());
       this.model.get('weather')[0].icon = Util.mapIcon(this.model.get('weather')[0].icon);
       this.$el.html(this.template(this.model.toJSON()));
       return this;

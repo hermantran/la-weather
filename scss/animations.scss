@@ -1,0 +1,22 @@
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 0%;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 0%;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 0%;}
+	100% {margin-left: -1000px;}
+}
+
+@-webkit-keyframes reverse-rotate {
+  0%  { @include transform(rotateY(180deg));}
+  100% { @include transform(rotateY(0deg)); }   
+}
+
+@-webkit-keyframes rotate {
+  0%  { @include transform(rotateY(0deg)); }
+  100% { @include transform(rotateY(180deg)); }   
+}

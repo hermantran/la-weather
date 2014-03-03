@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>What's the LA Weather?</title>
+    <title>LA Weather</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -16,14 +16,16 @@
     <!--[if lt IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <section class="sky morning">
-      <div class="info">
-        <h1>Los Angeles</h1>
-        <div class="controls"></div>
-      </div>
-    </section>
     
+    <div class="clouds"></div>
+    
+    <div class="info">
+      <h1 class="day"></h1>
+      <div class="controls"></div>
+    </div>
+    
+    <section class="sky sunrise"></section>
+
     <footer>
       &copy; 2014 Herman Tran <br>
       Uses <a target="_blank" href="http://openweathermap.org/">OpenWeatherMap API</a> and <a target="_blank" href="http://www.alessioatzeni.com/meteocons/">Meteocons</a></a>

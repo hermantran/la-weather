@@ -18,3 +18,10 @@
        -o-#{$property}:$value;
           #{$property}:$value;
 }
+
+@mixin gradient($dir, $value1, $value2) {
+  background: -webkit-linear-gradient(#{$dir}, $value1, $value2);
+     background: -moz-linear-gradient(#{$dir}, $value1, $value2);
+       background: -o-linear-gradient(#{$dir}, $value1, $value2);
+          background: linear-gradient(#{$dir}, $value1, $value2);
+}

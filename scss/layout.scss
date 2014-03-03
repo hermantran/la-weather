@@ -2,13 +2,22 @@
   width: 100%;
   height: 100%;
   position: relative;
-  @include transition(background 2s linear);
+  @include transition(background 3.5s ease-in-out);
   
   &:hover {
     // background: #222;
   }
 }
 
+.clouds {
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  z-index: 5;
+}
+
 .info {
   padding: 10px;
+  position: absolute;
+  z-index: 10;
 }

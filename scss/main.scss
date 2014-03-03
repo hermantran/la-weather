@@ -1,9 +1,17 @@
-$morning: #CAEEFE;
-$night: #0B0B15;
+$direction: 'bottom';
+$midnight: #7797B5;
+$dawn: #879BAA;
+$sunrise: #C7C9DD; $sunrise2: #FFDCB4;
+$morning: #CAEEFE; $morning2: #CAEEFE;
+$noon: #CAEEFE;
+$afternoon: darken($noon, 20%);
+$sunset: #0B1C4E;
+$night: #2A3952;
 
 @import 'mixins';
 @import 'base';
 @import 'layout';
+@import 'animations';
 @import 'module';
 @import 'state';
 @import 'theme';

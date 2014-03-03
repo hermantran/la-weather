@@ -18,6 +18,10 @@ define([
     '</ul>'
   ];
   
+  Templates.cloud = [
+    '<span style="width:<%= size %>px; height:<%= size %>px; top: <%= top %>; left: <%= left %>" class="cloud <%= icon %> hide"></span>'
+  ];
+  
   Templates.hourlyForecastList = [
     '<div>',
       '<a href="#" class="button prev">Prev</a>',

@@ -1,3 +1,8 @@
 .hide {
   display: none;
 }
+
+a.disabled {
+  color: #bbb;
+  cursor: default;
+}

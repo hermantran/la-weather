@@ -1,8 +1,9 @@
 .controls {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.8);
   border-top: 2px solid darken($morning, 40%);
   width: 205px;
   display: inline-block;
+  z-index: 10;
 }
 
 .forecastList {
@@ -35,16 +36,6 @@
   opacity: 1;
 }
 
-@-webkit-keyframes reverse-rotate {
-  0%  { @include transform(rotateY(180deg));}
-  100% { @include transform(rotateY(0deg)); }   
-}
-
-@-webkit-keyframes rotate {
-  0%  { @include transform(rotateY(0deg)); }
-  100% { @include transform(rotateY(180deg)); }   
-}
-
 .button {
   display: inline-block;
   text-align: center;
@@ -54,6 +45,34 @@
   &:hover {
     background: white;
   }
+}
+
+.cloud {
+  position: absolute;
+  min-width: 50px;
+  min-height: 50px;
+  @include prefix(animation, moveclouds 35s linear infinite);
+  @include transition(background 1s linear);
+}
+
+.cloud.one {
+  background: url(../img/cloud1.png);
+  background-size: cover;
+}
+
+.cloud.one.dark {
+  background: url(../img/cloud3.png);
+  background-size: cover;
+}
+
+.cloud.two {
+  background: url(../img/cloud2.png);
+  background-size: cover;
+}
+
+.cloud.two.dark {
+  background: url(../img/cloud4.png);
+  background-size: cover;
 }
 
 .temperature {

@@ -1,20 +1,27 @@
 define([
   'jquery',
+  'moment',
   'collections/hourlyForecasts',
-  'views/hourlyForecasts'
-], function($, HourlyForecastCollection, HourlyForecastListView) {
+  'views/hourlyForecasts',
+  'views/background',
+  'views/clouds'
+], function($, moment, HourlyForecastCollection, HourlyForecastListView, BackgroundView, CloudsView) {
   var App = {
     initialize: function() {
-      var $container = $('.controls'),
+      var $day = $('.day'),
+          $container = $('.controls'),
+          $background = $('.sky'),
+          $clouds = $('.clouds'),
           hourlyForecastCollection = new HourlyForecastCollection({ url: 'data/hourly.json' }),
-          hourlyForecastListView = new HourlyForecastListView({ el: $container, collection: hourlyForecastCollection });
+          hourlyForecastListView = new HourlyForecastListView({ el: $container, collection: hourlyForecastCollection }),
+          backgroundView = new BackgroundView({ el: $background }),
+          cloudsView = new CloudsView({ el: $clouds });
       
       hourlyForecastCollection.fetch({ 
         success: function() { 
           hourlyForecastListView.changeActive();  
         }
       });
-      $container.append(hourlyForecastListView.el);
     }
   };
   
