@@ -8,6 +8,7 @@ define([
   'views/clouds',
   'views/rain'
 ], function($, moment, plax, HourlyForecastCollection, HourlyForecastListView, BackgroundView, CloudsView, RainView) {
+  'use strict';
   var App = {
     initialize: function() {
       var $day = $('.day'),
@@ -21,8 +22,8 @@ define([
           cloudsView = new CloudsView({ el: $clouds }),
           rainView = new RainView({ el: $rain });
       
-      $clouds.plaxify({"xRange":0,"yRange":10});
-      $.plax.enable();
+      //$clouds.plaxify({"xRange":0,"yRange":10});
+      //$.plax.enable();
       
       hourlyForecastCollection.fetch({ 
         success: function() { 

@@ -18,16 +18,18 @@ module.exports = function(grunt) {
       compile: {
         options: {
           name: "main",
-          baseUrl: "js/",
+          baseUrl: "public/js/",
           paths: {
-            jquery: 'empty:',
-            backbone: 'empty:',
-            underscore: 'empty:',
-            requireLib: 'libs/require.min'
+            jquery: 'lib/jquery-1.11.0.min',
+            backbone: 'lib/backbone-min',
+            underscore: 'lib/underscore-min',
+            moment: 'lib/moment.min',
+            plax: 'lib/plax.min',
+            requireLib: 'lib/require.min'
           },
-          mainConfigFile: "js/main.js",
+          mainConfigFile: "public/js/main.js",
           include: ['requireLib'],
-          out: "js/dist/main.min.js"
+          out: "public/js/dist/main.min.js"
         }
       }
     },

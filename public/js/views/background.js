@@ -17,7 +17,6 @@ define([
   var BackgroundView = Backbone.View.extend({
     initialize: function() {
       this.listenTo(AppState, 'change:activeForecast', this.render);
-      this.render();
     },
 
     render: function() {
