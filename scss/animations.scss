@@ -11,6 +11,16 @@
 	100% {margin-left: -1000px;}
 }
 
+@-webkit-keyframes drop {
+  to { margin-top: 900px; }
+}
+@-moz-keyframes drop {
+  to { margin-top: 900px; }
+}
+@-o-keyframes drop {
+  to { margin-top: 900px; }
+}
+
 @-webkit-keyframes reverse-rotate {
   0%  { @include transform(rotateY(180deg));}
   100% { @include transform(rotateY(0deg)); }   

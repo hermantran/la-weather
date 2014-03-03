@@ -1,12 +1,12 @@
 $direction: 'bottom';
-$midnight: #7797B5;
-$dawn: #879BAA;
-$sunrise: #C7C9DD; $sunrise2: #FFDCB4;
-$morning: #CAEEFE; $morning2: #CAEEFE;
-$noon: #CAEEFE;
-$afternoon: darken($noon, 20%);
-$sunset: #0B1C4E;
-$night: #2A3952;
+$midnight: #1A1D30; $midnight2: #2C2C36;
+$dawn: lighten(#1A1D30, 10%); $dawn2: lighten(#2C2C36, 20%);
+$sunrise: #EED195; $sunrise2: #93A7BF;
+$morning: lighten(#EED195, 10%); $morning2: #84C2EB;
+$noon: #C2D0D9; $noon2: lighten(#4575B3, 10%);
+$afternoon: #AAC0CE;  $afternoon2: #4575B3;
+$sunset: #4D4757; $sunset2: #1B1D33;
+$night: lighten(#2C2C36, 10%); $night2: #27272F;
 
 @import 'mixins';
 @import 'base';

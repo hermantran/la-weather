@@ -1,9 +1,9 @@
 .midnight {
-  background: $midnight;
+  @include gradient($direction, $midnight, $midnight2);
 }
 
 .dawn {
-  background: $dawn;
+  @include gradient($direction, $dawn, $dawn2);
 }
 
 .sunrise {
@@ -11,21 +11,21 @@
 }
 
 .morning {
-  background: $morning;
+  @include gradient($direction, $morning, $morning2);
 }
 
 .noon {
-  background: $noon;
+  @include gradient($direction, $noon, $noon2);
 }
 
 .afternoon {
-  background: $afternoon;
+  @include gradient($direction, $afternoon, $afternoon2);
 }
 
 .sunset {
-  background: $sunset;
+  @include gradient($direction, $sunset, $sunset2);
 }
 
 .night {
-  background: $night;
+  @include gradient($direction, $night, $night2);
 }

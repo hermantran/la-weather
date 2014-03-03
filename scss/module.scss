@@ -52,7 +52,7 @@
   min-width: 50px;
   min-height: 50px;
   @include prefix(animation, moveclouds 35s linear infinite);
-  @include transition(background 1s linear);
+  @include transition(background 3s linear);
 }
 
 .cloud.one {
@@ -73,6 +73,19 @@
 .cloud.two.dark {
   background: url(../img/cloud4.png);
   background-size: cover;
+}
+
+$size: 10px;
+
+.particle {
+  background:-webkit-gradient(linear,0% 0%,0% 100%, from(rgba(13,52,58,1) ), to(rgba(240,240,240,0.6))  );
+  background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(240,240,240,.6) 100%);
+	width:1px;
+	height:39px;
+	position: absolute;
+	bottom:200px;
+	-webkit-animation: drop .63s linear infinite;
+  -moz-animation: drop .63s linear infinite;
 }
 
 .temperature {

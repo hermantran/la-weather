@@ -19,3 +19,7 @@ http://thecodeplayer.com/walkthrough/pure-css3-animated-clouds-background
 Cloud icon
 https://www.iconfinder.com/icons/115749/cloud_weather_icon#size=128
 https://www.iconfinder.com/icons/183554/cloud_icon#size=128
+
+CSS3 rain animation
+http://codepen.io/alemesre/pen/hAxGg
+http://codepen.io/blazeeboy/pen/mgwsF

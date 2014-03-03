@@ -22,6 +22,10 @@ define([
     '<span style="width:<%= size %>px; height:<%= size %>px; top: <%= top %>; left: <%= left %>" class="cloud <%= icon %> hide"></span>'
   ];
   
+  Templates.particle = [
+    '<span style="top: <%= top %>; left: <%= left %>" class="particle"></span>'
+  ];
+  
   Templates.hourlyForecastList = [
     '<div>',
       '<a href="#" class="button prev">Prev</a>',

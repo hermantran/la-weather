@@ -33,9 +33,12 @@ a {
 }
 
 footer {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 5px;
   text-align: right;
   position: absolute;
   bottom: 5px;
   right: 10px;
   font-size: 12px;
+  z-index: 20;
 }
